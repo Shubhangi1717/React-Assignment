@@ -74,8 +74,11 @@ const Home = () => {
                 <p className="text-gray-600">⭐ {recipe.rating}</p>
               </div>
 
-              <Link to={`/recipe/${recipe.id}`} className="mt-3 w-full">
-                <button className="w-[30%] bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+              <Link
+                to={`/recipe/${recipe.id}`}
+                className="mt-3 w-full flex justify-center"
+              >
+                <button className="w-full sm:w-auto bg-orange-500 text-white px-4 py-2 rounded-lg text-sm sm:text-base md:px-5 md:py-3 md:text-lg font-semibold hover:bg-orange-600 transition">
                   View Recipe
                 </button>
               </Link>
